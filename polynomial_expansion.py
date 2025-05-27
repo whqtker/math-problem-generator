@@ -48,8 +48,12 @@ doc.preamble.append(Command("usepackage", "ulem"))
 # 제목
 with doc.create(Center()):
     doc.append(Command("LARGE"))
-    doc.append(NoEscape(r"\textbf{다항식의 곱셈 공식 연습문제}"))  # NoEscape로 감싸기
+    doc.append(NoEscape(r"\textbf{다항식의 곱셈 공식 테스트}"))
     doc.append("\n\n")
+
+doc.append(NoEscape(r"\large"))
+doc.append(NoEscape(r"\setlength{\itemsep}{2.5em}"))
+doc.append(NoEscape(r"\setlength{\parsep}{0.7em}"))
 
 # 문제 목록
 with doc.create(Enumerate()) as enum:
