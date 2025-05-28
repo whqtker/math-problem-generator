@@ -58,7 +58,7 @@ problem_doc = create_document()
 
 with problem_doc.create(Center()):
     problem_doc.append(Command("LARGE"))
-    problem_doc.append(NoEscape(r"\textbf{다항식의 곱셈 공식 테스트}"))
+    problem_doc.append(NoEscape(r"\textbf{곱셈 공식 테스트}"))
     problem_doc.append("\n\n")
 
 with problem_doc.create(Enumerate()) as enum:
@@ -69,7 +69,7 @@ answer_doc = create_document()
 
 with answer_doc.create(Center()):
     answer_doc.append(Command("LARGE"))
-    answer_doc.append(NoEscape(r"\textbf{다항식의 곱셈 공식 테스트 (정답)}"))
+    answer_doc.append(NoEscape(r"\textbf{곱셈 공식 테스트 (정답)}"))
     answer_doc.append("\n\n")
 
 with answer_doc.create(Enumerate()) as enum:
